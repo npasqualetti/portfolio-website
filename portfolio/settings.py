@@ -28,9 +28,9 @@ ALLOWED_HOSTS = ['technetconsultingllc.herokuapp.com', 'https://technetconsultin
 CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'https://www.technetconsultingllc.com']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['technetconsultingllc.herokuapp.com']
+ALLOWED_HOSTS = ['technetconsultingllc.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
