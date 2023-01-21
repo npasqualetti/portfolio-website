@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY']
 
 #HEROKU
-ALLOWED_HOSTS = ['technetconsultingllc.herokuapp.com', "127.0.0.1", 'technetconsultingllc.com', 'www.technetconsultingllc.com',]
+ALLOWED_HOSTS = ['technetconsultingllc.herokuapp.com', 'https://technetconsultingllc.herokuapp.com', "127.0.0.1", 'technetconsultingllc.com', 'www.technetconsultingllc.com',]
 CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'https://www.technetconsultingllc.com']
 
 # SECURITY WARNING: don't run with debug turned on in production!
