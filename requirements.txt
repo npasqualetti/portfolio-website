@@ -23,7 +23,7 @@ defusedxml==0.7.1
 Deprecated==1.2.13
 distlib==0.3.0
 distro==1.4.0
-distro-info===0.23ubuntu1
+# distro-info===0.23ubuntu1
 dj-database-url==1.0.0
 Django==4.1
 django-allauth==0.51.0
