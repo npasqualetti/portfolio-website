@@ -1,3 +1,4 @@
+{% load static %}
 <!-- Container for demo purpose -->
 <div class="container my-24 px-6 mx-auto">
 
@@ -7,10 +8,10 @@
     <h2 class="text-3xl font-bold mb-12 text-center">Projects we are proud of</h2>
 
     <div class="flex flex-wrap items-center">
-      <div class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 md:px-6">
-        <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg shadow-lg" data-mdb-ripple="true"
+      <div class="grow-0 shrink-0 basis-auto w-full lg:w-12/12 mb-12 lg:mb-0 md:px-6">
+        <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg shadow-lg mb-8" data-mdb-ripple="true"
           data-mdb-ripple-color="light" style="background-position: 50%">
-          <img src="https://mdbootstrap.com/img/new/textures/full/126.jpg" class="w-full" />
+          <img src="{% static 'img/stockmvp.png' %}" class="w-full" />
           <a href="https://www.stock-mvp.com" rel="noreferrer noopener" target="_blank" >
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.4)">
@@ -19,12 +20,12 @@
                   <h3 class="text-2xl uppercase font-bold mb-6">
                     StockMVP</u>
                   </h3>
-                  <p style="color: hsl(231, 52.6%, 85%)">
+                  <!-- <p style="color: hsl(231, 52.6%, 85%)">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quia
                     laboriosam error consequuntur fugit, doloribus rerum, iure nesciunt amet
                     quidem veniam cupiditate hic fugiat dolore aperiam quisquam libero earum
                     quibusdam?
-                  </p>
+                  </p> -->
                 </div>
               </div>
             </div>
@@ -37,7 +38,7 @@
         </div>
       </div>
 
-      <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12 md:px-6">
+      <div class="grow-0 shrink-0 basis-auto w-full lg:w-12/12 md:px-6">
         <div class="flex mb-12">
           <div class="shrink-0">
             <div class="p-4 rounded-md shadow-lg" style="background-color: hsl(231, 52.6%, 20%)">
@@ -49,11 +50,9 @@
             </div>
           </div>
           <div class="grow ml-4">
-            <p class="font-bold mb-1">Support 24/7</p>
+            <p class="font-bold mb-1">Information for over 45,000+ Stocks</p>
             <p class="text-gray-500">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam quibusdam
-              modi sapiente magni molestias pariatur facilis reprehenderit facere aliquam ex.
-            </p>
+              We created the StockMVP Dashboard which gave users full access to SEC filings for over 45,000 companies, ability to create multiple StockMVP View Cards, DCF calculator, stock wizard, institutional trading, analyst ratings, analyst price targets, gradings, senate trading, stock news, custom charts, tables and more.            </p>
           </div>
         </div>
 
@@ -70,8 +69,7 @@
           <div class="grow ml-4">
             <p class="font-bold mb-1">Safe and solid</p>
             <p class="text-gray-500">
-              Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio
-              soluta, quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+              Our services are built with safety and stability in mind. We use robust and secure technologies to ensure that your website and data are protected against potential threats. Our team of experts also regularly monitors and tests the systems to ensure they are working efficiently and effectively.
             </p>
           </div>
         </div>
@@ -89,9 +87,7 @@
           <div class="grow ml-4">
             <p class="font-bold mb-1">Extremely fast</p>
             <p class="text-gray-500">
-              Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic
-              voluptatibus dolores exercitationem? Facilis debitis aspernatur amet nisi iure
-              eveniet facere?
+              We use the latest technologies and optimization techniques to ensure that your website loads quickly and efficiently. This helps to improve user experience, reduce bounce rates, and increase conversions.
             </p>
           </div>
         </div>
@@ -109,8 +105,7 @@
           <div class="grow ml-4">
             <p class="font-bold mb-1">Live analytics</p>
             <p class="text-gray-500">
-              Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime sint,
-              consectetur atque ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
+              Our live analytics service provides real-time data on your website's performance and user behavior, allowing you to make informed decisions about your online marketing strategies and website improvements. This can include data on website traffic, conversion rates, and user engagement.
             </p>
           </div>
         </div>
@@ -124,24 +119,24 @@
   <section class="mb-32 text-gray-800">
     
     <div class="flex flex-wrap items-center">
-      <div class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 md:px-6">
-        <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg shadow-lg" data-mdb-ripple="true"
+      <div class="grow-0 shrink-0 basis-auto w-full lg:w-12/12 mb-12 lg:mb-0 md:px-6">
+        <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg shadow-lg mb-8" data-mdb-ripple="true"
           data-mdb-ripple-color="light" style="background-position: 50%">
-          <img src="https://mdbootstrap.com/img/new/textures/full/126.jpg" class="w-full" />
+          <img src="{% static 'img/google-analytics.png' %}" class="w-full" />
           <a href="#!">
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.4)">
               <div class="flex justify-center items-center h-full">
                 <div class="px-6 py-12 md:px-12 text-white text-center">
                   <h3 class="text-2xl uppercase font-bold mb-6">
-                    The future is <u style="color: hsl(231, 52.6%, 85%)">now</u>
+                    99/100 Performance Rating by Google Analytics
                   </h3>
-                  <p style="color: hsl(231, 52.6%, 85%)">
+                  <!-- <p style="color: hsl(231, 52.6%, 85%)">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quia
                     laboriosam error consequuntur fugit, doloribus rerum, iure nesciunt amet
                     quidem veniam cupiditate hic fugiat dolore aperiam quisquam libero earum
                     quibusdam?
-                  </p>
+                  </p> -->
                 </div>
               </div>
             </div>
@@ -154,7 +149,7 @@
         </div>
       </div>
 
-      <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12 md:px-6">
+      <div class="grow-0 shrink-0 basis-auto w-full lg:w-12/12 md:px-6">
         <div class="flex mb-12">
           <div class="shrink-0">
             <div class="p-4 rounded-md shadow-lg" style="background-color: hsl(231, 52.6%, 20%)">
@@ -166,11 +161,9 @@
             </div>
           </div>
           <div class="grow ml-4">
-            <p class="font-bold mb-1">Support 24/7</p>
+            <p class="font-bold mb-1">Improved user experience</p>
             <p class="text-gray-500">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam quibusdam
-              modi sapiente magni molestias pariatur facilis reprehenderit facere aliquam ex.
-            </p>
+              A high score on the Google Analytics speed test indicates that your website is loading quickly and efficiently, providing a better experience for users. This can lead to increased engagement and conversions.            </p>
           </div>
         </div>
 
@@ -185,11 +178,9 @@
             </div>
           </div>
           <div class="grow ml-4">
-            <p class="font-bold mb-1">Safe and solid</p>
+            <p class="font-bold mb-1">Increased SEO benefits</p>
             <p class="text-gray-500">
-              Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio
-              soluta, quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
-            </p>
+              Search engines like Google take website speed into account when ranking pages. A fast-loading website can help your pages rank higher in search results, leading to increased visibility and organic traffic.            </p>
           </div>
         </div>
 
@@ -204,12 +195,9 @@
             </div>
           </div>
           <div class="grow ml-4">
-            <p class="font-bold mb-1">Extremely fast</p>
+            <p class="font-bold mb-1">Reduced bounce rates</p>
             <p class="text-gray-500">
-              Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic
-              voluptatibus dolores exercitationem? Facilis debitis aspernatur amet nisi iure
-              eveniet facere?
-            </p>
+              If a website takes too long to load, users are likely to navigate away from the page, leading to high bounce rates. A high score on the Google Analytics speed test indicates that your website is loading quickly enough to keep users engaged and on the page.            </p>
           </div>
         </div>
 
@@ -224,11 +212,9 @@
             </div>
           </div>
           <div class="grow ml-4">
-            <p class="font-bold mb-1">Live analytics</p>
+            <p class="font-bold mb-1">Increased conversion rates</p>
             <p class="text-gray-500">
-              Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime sint,
-              consectetur atque ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
-            </p>
+              A fast-loading website can lead to increased conversions as users are more likely to complete a purchase or sign up for a service if they don't have to wait long for pages to load. A high score on the Google Analytics speed test indicates that your website is optimized for quick loading times, which can lead to increased conversion rates.            </p>
           </div>
         </div>
       </div>
