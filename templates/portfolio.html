@@ -3,7 +3,6 @@
   {% include 'components/head.html' %}
   {% include 'components/google-tag.html' %}
   <body>
-    {% include 'components/floating-banner.html' %}
     {% include 'components/navbar.html' %}
       <div class="max-w-screen-xl mx-auto px-5">
         {% include 'components/projects.html' %}
@@ -12,7 +11,8 @@
         {% include 'components/technologies.html' %}
         {% include 'components/faqs.html' %}
       </div>
-    {% include 'components/endofbodyscripts.html' %}
+      {% include 'components/floating-banner.html' %}
+      {% include 'components/endofbodyscripts.html' %}
   </body>
   {% include 'components/footer.html' %}
 </html>
