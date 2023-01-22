@@ -1,42 +1,15 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/jpg" href="/static/img/favicon.jpg">
-    <meta name="generator" content="v1.9.1">
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
-    <title>Technet Consulting LLC - Maximize Your Online Success</title>
-    <link rel="canonical" href="https://astroship.web3templates.com/">
-    <meta name="description" content="We design, build & taylor digital experiences your audience will love. Unlock the full potential of your online presence with our expert website consulting services.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Technet Consulting LLC - Maximize Your Online Success">
-    <meta property="og:type" content="website">
-    <!-- <meta property="og:image" content="https://astroship.web3templates.com/opengraph.jpg">
-    <meta property="og:url" content="https://astroship.web3templates.com/">
-    <meta property="og:image:url" content="https://astroship.web3templates.com/opengraph.jpg"> -->
-    <meta property="og:image:height">
-    <meta property="og:image:alt" content="Astroship Homepage Screenshot">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@technetconsulting">
-    <meta name="twitter:creator" content="@nickpasqualetti">
-    <script type="module">document.addEventListener("DOMContentLoaded",function(){document.getElementById("menu").addEventListener("click",()=>{[...document.querySelectorAll(".toggle")].forEach(e=>{e.classList.toggle("hidden")})});const o=document.querySelectorAll(".dropdown");o.forEach(e=>{const r=e.querySelector("button");r.addEventListener("click",n=>{e.classList.toggle("open"),e.setAttribute("aria-expanded",e.getAttribute("aria-expanded")==="true"?"false":"true"),e.hasAttribute("open")?e.removeAttribute("open"):e.setAttribute("open",""),r.nextElementSibling.classList.toggle("hidden"),Array.from(o).filter(t=>t!==e).forEach(t=>{t.classList.remove("open"),t.removeAttribute("open"),t.setAttribute("aria-expanded","false"),t.querySelector(".dropdown-toggle").classList.add("hidden")}),n.stopPropagation()})}),document.addEventListener("click",()=>{o.forEach(e=>{e.classList.remove("open"),e.removeAttribute("open"),e.setAttribute("aria-expanded","false")}),document.querySelectorAll(".dropdown-toggle").forEach(e=>e.classList.add("hidden"))})});</script>
-    <script src="https://cdn.tailwindcss.com">
-    </script>
-  </head>
-
+  {% include 'components/head.html' %}
   <body>
     {% include 'components/navbar.html' %}
-
       <div class="max-w-screen-xl mx-auto px-5">
-
-        {% include 'components/hero.html' %}
+        {% include 'components/projects.html' %}
         {% include 'components/services.html' %}
-        {% include 'components/technologies.html' %}
         {% include 'components/cta.html' %}
-
+        {% include 'components/technologies.html' %}
+        {% include 'components/faqs.html' %}
       </div>
-
-    {% include 'components/footer.html' %}
+    {% include 'components/endofbodyscripts.html' %}
   </body>
-
+  {% include 'components/footer.html' %}
 </html>
