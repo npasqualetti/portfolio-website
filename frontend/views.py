@@ -24,7 +24,7 @@ def contact(request):
             recipient_list=['nick@technetconsultingllc.com']
         )
         messages.success(request, 'We have received your email. We will be in contact within 24 hours.')
-        return redirect('/')
+        return redirect('/contact')
     context = {}
     return render(request, 'contact.html', context)  
 
