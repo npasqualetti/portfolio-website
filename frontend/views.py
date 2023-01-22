@@ -14,11 +14,12 @@ def about(request):
 
 def contact(request):
     if request.method == 'POST':
-        print(dir(request.POST))
-        print(request.POST)
+        email = (request.POST.get("email"))
+        subject = (request.POST.get("subject"))
+        message = (request.POST.get("message"))
         send_mail(
-            subject='Hi',
-            message='Test',
+            subject=subject,
+            message=f"{email} \n {message}",
             from_email=settings.EMAIL_HOST_USER,
             recipient_list=['nick@technetconsultingllc.com']
         )

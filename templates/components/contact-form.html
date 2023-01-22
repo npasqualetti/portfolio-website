@@ -17,23 +17,32 @@
                 class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
                 style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)"
               >
+              {% if messages %}
+              <div class="alert alert-dismissible" role="alert">
+              {% for message in messages %}
+                  <div class="alert alert-{{ message.tags }}" style="text: green;">{{ message }}</div>
+              {% endfor %}
+              </div>
+              {% endif %}
               <h2 class="text-3xl font-bold mb-2">Contact us</h2>
               <h3 class="mb-12">Tell us about your digital needs and we will respond within 24 hours.</h3>
               <form method="POST">
                 {% csrf_token %}
                 <div class="form-group mb-6">
                   <input
-                    type="text"
+                    type="email"
                     class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                     id="email"
+                    name="email"
                     placeholder="Email"
                   />
                 </div>
                 <div class="form-group mb-6">
                   <input
-                    type="subject"
+                    type="text"
                     class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                     id="subject"
+                    name="subject"
                     placeholder="Subject"
                   />
                 </div>
@@ -42,6 +51,7 @@
                     class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                     id="exampleFormControlTextarea13"
                     rows="message"
+                    name="message"
                     placeholder="Message"
                   ></textarea>
                 </div>
