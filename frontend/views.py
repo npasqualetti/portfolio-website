@@ -31,3 +31,11 @@ def contact(request):
 def portfolio(request):
     context = {}
     return render(request, 'portfolio.html', context)  
+
+def terms(request):
+    context = {}
+    return render(request, 'terms.html', context)  
+
+def privacy(request):
+    context = {}
+    return render(request, 'privacy.html', context)  

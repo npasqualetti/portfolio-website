@@ -4,6 +4,8 @@ from .views import (
     about,
     contact,
     portfolio,
+    terms,
+    privacy,
 )
 
 
@@ -12,4 +14,6 @@ urlpatterns = [
     path('about/', about, name="about"),
     path('contact/', contact, name="contact"),
     path('portfolio/', portfolio, name="portfolio"),
+    path('terms/', terms, name="terms"),
+    path('privacy/', privacy, name="privacy"),
 ]
